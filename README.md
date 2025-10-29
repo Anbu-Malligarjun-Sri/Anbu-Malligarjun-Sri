@@ -1,8 +1,9 @@
-<div >
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/44a79dd9-208b-40a5-9e75-9d4d042a5475" /><img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/9cbc44a4-df7d-4870-8741-1c4796a99aa5" /><div >
 
  
 
 <p align="center">
+ <a href="https://www.youtube.com/channel/UCXHN6dAbYjsC9eF8Dk2qTtg"><img alt="Youtube" src="[https://icons8.com/icon/9a46bTk3awwI/youtube-play](https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000)"
  <a href="https://github.com/Anbu-Malligarjun-Sri" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a> 
  <a href="https://www.linkedin.com/in/anbu-malligarjun-sri-835a372a4/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
 

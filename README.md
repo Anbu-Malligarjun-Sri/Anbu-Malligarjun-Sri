@@ -1,7 +1,7 @@
 <p align="center">
  <a href="https://github.com/Anbu-Malligarjun-Sri" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a> 
  <a href="https://www.linkedin.com/in/anbu-malligarjun-sri-835a372a4/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
-  <a href="https://www.youtube.com/channel/UCXHN6dAbYjsC9eF8Dk2qTtg"><img height="70" width="80" alt="YouTube" src="https://github.com/Anbu-Malligarjun-Sri/Anbu-Malligarjun-Sri/blob/0103fcc45e4c329d08e272e459acf59e83d4848d/Youtube.png"/></a>
+  <a href="https://www.youtube.com/channel/UCXHN6dAbYjsC9eF8Dk2qTtg"><img height="50" width="80" alt="YouTube" src="https://github.com/Anbu-Malligarjun-Sri/Anbu-Malligarjun-Sri/blob/0103fcc45e4c329d08e272e459acf59e83d4848d/Youtube.png"/></a>
 
 </p>
  

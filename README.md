@@ -3,7 +3,7 @@
  
 
 <p align="center">
- <a href="https://www.youtube.com/channel/UCXHN6dAbYjsC9eF8Dk2qTtg"><img alt="Youtube" src="[https://icons8.com/icon/9a46bTk3awwI/youtube-play](https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000)"/>
+ <a href="https://www.youtube.com/channel/UCXHN6dAbYjsC9eF8Dk2qTtg"><img width="60" height="60" alt="YouTube" src="https://github.com/user-attachments/assets/8aef91e4-9a3a-4e52-88e1-774026302e7f"/></a>
  <a href="https://github.com/Anbu-Malligarjun-Sri" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a> 
  <a href="https://www.linkedin.com/in/anbu-malligarjun-sri-835a372a4/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
 

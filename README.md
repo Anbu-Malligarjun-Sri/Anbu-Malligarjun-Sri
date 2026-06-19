@@ -10,9 +10,16 @@
 
 
 <h1 align="center">Heyya, I'm Anbu Malligarjun</h1>
-<h5 align="center">BITS Pilani Intern -Hyderbad 2025</h5>
-<h6 align= "center" style="background-color:DodgerBlue;"> I’m currently studying in pre-final year of Bachelor's of Engineering. I’m keen to work on Machine Learning, Data Analysis and Robotics projects. I have hands on experience in programming languages C++, Python, Java, C. I have built quite a few projects using Python and Machine learning algorithms. I’m currently learning Robotics Operating Systems (ROS2) and Deep Learning. My skillset includes machine learning, deep learning, computer vision, LLM fine-tuning.  
+<h5 align="center">Final Year B.E. Computer Science Student | SDE Intern at Infinite Computer Solutions</h5>
+<h6 align= "center" style="background-color:DodgerBlue;">I'm passionate about Artificial Intelligence, Machine Learning, Robotics, and Software Development. I enjoy building intelligent systems using Python and exploring fields such as Computer Vision, Large Language Models (LLMs), and Automation.
 
+</h6>
+
+<h6>
+ Currently:</br>
+🔹 Software Development Engineer Intern at Infinite Computer Solutions</br>
+🔹 Learning Pega and Enterprise Application Development</br>
+🔹 Studying Deep Learning, Robotics, and AI Systems</br>
 </h6>
 
 ## Coding Profiles:

@@ -8,7 +8,7 @@
 </p>
 <div> 
 
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=25&pause=500&color=75D1FF&width=390&height=35&lines=Welcome+to+my+GitHub+page%EF%BC%81)](https://git.io/typing-svg)
 <h1 align="center">Heyya, I'm Anbu Malligarjun</h1>
 <h5 align="center">Final Year B.E. Computer Science Student | SDE Intern at Infinite Computer Solutions</h5>
 <h6 align= "center" style="background-color:DodgerBlue;">I'm passionate about Artificial Intelligence, Machine Learning, Robotics, and Software Development. I enjoy building intelligent systems using Python and exploring fields such as Computer Vision, Large Language Models (LLMs), and Automation.
@@ -36,3 +36,9 @@
 <img height="50" width="50" src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/pycharm.png"/> <img height="50" width="50" src="https://img.icons8.com/color/50/000000/git.png"/> <img height="50" src="https://img.icons8.com/officel/480/null/java-eclipse.png"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/figma--v1.png"/>
 
 [![Leetcode Stats](https://leetcard.jacoblin.cool/Anbu_Malligarjun_Sri?ext=contest&theme=dark)](https://leetcode.com/Anbu_Malligarjun_Sri)
+
+<!-- GitHub stats -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Anbu-Malligarjun-Sri&show_icons=true&theme=radical" alt="Anbu's GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anbu-Malligarjun-Sri&layout=compact&theme=radical" alt="Top languages" />
+</p>

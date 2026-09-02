@@ -1,0 +1,55 @@
+name: Postprocess 3D-contrib -> trees
+on:
+  # allow manual runs from the Actions UI
+  workflow_dispatch:
+  # run automatically when the 3D generator finishes
+  workflow_run:
+    workflows: ["GitHub-Profile-3D-Contrib"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+jobs:
+  postprocess:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Show files (debug)
+        run: |
+          echo "Files at repo root:"
+          ls -la || true
+          echo "profile-3d-contrib contents:"
+          ls -la profile-3d-contrib || true
+          echo "Script exists?"
+          [ -f svg_to_trees.py ] && echo "svg_to_trees.py found" || (echo "svg_to_trees.py NOT found"; exit 1)
+
+      - name: Run svg_to_trees.py
+        # the input filename here matches the 3D action you used
+        run: |
+          python3 svg_to_trees.py profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-trees.svg
+
+      - name: Show generated file (debug)
+        run: |
+          echo "Generated files in profile-3d-contrib:"
+          ls -la profile-3d-contrib || true
+          file profile-3d-contrib/profile-night-rainbow-trees.svg || true
+
+      - name: Commit & push processed SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile-3d-contrib/profile-night-rainbow-trees.svg || true
+          if git commit -m "chore: postprocess 3d contrib -> trees" ; then
+            git push
+          else
+            echo "No changes to commit"
+          fi

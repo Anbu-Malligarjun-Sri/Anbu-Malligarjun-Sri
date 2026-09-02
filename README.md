@@ -41,3 +41,11 @@
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Anbu-Malligarjun-Sri&theme=dark" alt="GitHub streak stats" />
 </p>
+
+## My contribution snake
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dist/github-snake-dark.svg" />
+    <img alt="Contribution snake" src="./dist/github-snake.svg" />
+  </picture>
+</p>

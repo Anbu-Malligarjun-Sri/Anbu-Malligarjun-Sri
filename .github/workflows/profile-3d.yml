@@ -1,0 +1,41 @@
+name: GitHub-Profile-3D-Contrib
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 18 * * *'   # daily at 18:00 UTC (optional)
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Generate 3D contribution artwork
+        # uses the official github-profile-3d-contrib action
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Show output files (for debug)
+        run: |
+          echo "==== Listing generated files ===="
+          ls -la || true
+          ls -la profile-3d-contrib || true
+          echo "==== done ===="
+
+      - name: Commit & Push generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # add any generated files/folders - action typically writes to profile-3d-contrib/
+          git add profile-3d-contrib || true
+          if git commit -m "chore: generate 3d contrib" ; then
+            git push
+          else
+            echo "No changes to commit"
+          fi

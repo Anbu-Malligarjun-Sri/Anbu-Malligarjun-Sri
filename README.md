@@ -37,8 +37,7 @@
 
 [![Leetcode Stats](https://leetcard.jacoblin.cool/Anbu_Malligarjun_Sri?ext=contest&theme=dark)](https://leetcode.com/Anbu_Malligarjun_Sri)
 
-<!-- GitHub stats -->
+<!-- Contribution streak -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anbu-Malligarjun-Sri&show_icons=true&theme=radical" alt="Anbu's GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anbu-Malligarjun-Sri&layout=compact&theme=radical" alt="Top languages" />
+  <img src="https://streak-stats.demolab.com?user=Anbu-Malligarjun-Sri&theme=dark" alt="GitHub streak stats" />
 </p>

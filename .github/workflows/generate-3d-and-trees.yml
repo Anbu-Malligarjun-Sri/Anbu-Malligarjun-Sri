@@ -1,0 +1,43 @@
+name: Generate 3D Contrib + Treeify
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *' # optional daily run at 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Generate 3D contribution artwork
+        # uses the 3D contrib generator (same as before)
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Ensure script exists (debug)
+        run: |
+          ls -la
+          ls -la profile-3d-contrib || true
+          test -f svg_to_trees.py || (echo "svg_to_trees.py missing" && exit 1)
+
+      - name: Run post-processing: convert to trees
+        run: |
+          python3 svg_to_trees.py profile-3d-contrib/profile-night-rainbow.svg profile-3d-contrib/profile-night-rainbow-trees.svg
+
+      - name: Commit & push processed SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile-3d-contrib/profile-night-rainbow-trees.svg || true
+          if git commit -m "chore: generate + postprocess 3d contrib -> trees" ; then
+            git push
+          else
+            echo "No changes to commit"
+          fi

@@ -1,0 +1,45 @@
+name: Generate 3D Contrib + Trees
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate 3D contribution SVG
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Debug output
+        run: ls -la profile-3d-contrib/
+
+      - name: Convert to tree style
+        run: |
+          python3 svg_to_trees.py \
+          profile-3d-contrib/profile-night-rainbow.svg \
+          profile-3d-contrib/trees.svg
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile-3d-contrib/*.svg || true
+          git commit -m "update trees svg" || echo "No changes"
+          git push

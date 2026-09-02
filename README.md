@@ -43,9 +43,7 @@
 </p>
 
 <!-- 3D contributions art -->
-<p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D contributions" />
-</p>
+![Tree Graph](./profile-3d-contrib/trees.svg)
 
 ## My contribution snake
 <p align="center">

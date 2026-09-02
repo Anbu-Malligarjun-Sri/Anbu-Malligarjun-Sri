@@ -42,6 +42,11 @@
   <img src="https://streak-stats.demolab.com?user=Anbu-Malligarjun-Sri&theme=dark" alt="GitHub streak stats" />
 </p>
 
+<!-- 3D contributions art -->
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D contributions" />
+</p>
+
 ## My contribution snake
 <p align="center">
   <picture>
